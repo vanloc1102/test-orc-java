@@ -27,6 +27,7 @@ public class OCRServiceImpl implements OCRService {
         String result = tesseract.doOCR(tempFile.toFile());
         // Delete the temporary file
         Files.delete(tempFile);
+        System.out.println("Test git");
         return result;
     }
 }
